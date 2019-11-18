@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="email_hint">Enter Name</string>
+    <string name="password_hint">Enter Password</string>
+</resources>

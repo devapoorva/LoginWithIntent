@@ -1,0 +1,28 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/edt_email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_password"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_register"
+        android:onClick="register"
+        android:layout_below="@+id/edt_password"
+        android:layout_marginTop="10dp"
+        android:text="Register"/>
+</RelativeLayout>

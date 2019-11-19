@@ -1,5 +1,6 @@
 package com.niks.firstapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -50,7 +51,11 @@ public class RegisterActivity extends AppCompatActivity {
         }
         else
         {
-            Toast.makeText(RegisterActivity.this,userEmail+"\n"+userPassword,Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(RegisterActivity.this,Login.class);
+            intent.putExtra("email",userEmail);
+            intent.putExtra("password",userPassword);
+            startActivity(intent);
+            // Toast.makeText(RegisterActivity.this,userEmail+"\n"+userPassword,Toast.LENGTH_SHORT).show();
         }
 
     }
